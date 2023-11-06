@@ -54,7 +54,7 @@ resource "aws_instance" "blog" {
 
 module "bloc_alb" {
   source = "terraform-aws-modules/alb/aws"
-  version = "~> 5.0"
+  version = "~> 6.0"
 
   name            = "my-alb"
   vpc_id          = module.blog_vpc.vpc_id
